@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+/* .price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+/* .column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+} */ 
+</style>
+</head>
+
+<body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                                    <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="https://www.whowhatwear.com/" target="_blank">whats making news</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">go shopping</a>
+                                      </li>
+                                    
+                                    </ul>
+                                    <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item">
+                                          
+                                            <!-- <input class="form-control mr-sm-2" type="text" placeholder="Search"> -->
+                                            <!-- <button class="btn btn-secondary my-2 my-sm-0" type="submit">check out our recommendations</button> -->
+                                            <input class="btn btn-secondary my-2 my-sm-0" type="button" value="Go back"  onclick="history.back()">
+                                          
+                                        </li>
+                                        
+                                   </ul>
+                                    
+                        </div>
+        </nav>
+  
+      <div class ="row">
+                
+        
+                <div class="col-md-4">
+                    <div class="card border-light mb-3" style="max-width: 18rem;height: 450px; width: 400px;">
+                        <p class="card-header"><strong>First Option</strong></p>
+                        <img class="card-img-top" src="{{first_asin[0][2]}}"  style="height: 250px; width: 270px;">
+                        
+                        <div class="card-body">
+                                <p class="card-title text-primary">{{first_asin[0][1]}}</p>
+                                <a class="btn btn-outline-primary" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">Shop Now</a>
+                        </div> 
+                    </div>
+                </div>
+                
+                <div class="col-md-4">
+                                <div class="card border-light mb-3" style="max-width: 18rem;height: 450px; width: 400px;">
+                                    <p class="card-header "><strong>Second Option</strong></p>
+                                    <img class="card-img-top" src="{{second_asin[0][2]}}"  style="height: 250px; width: 270px;">
+                                    
+                                    <div class="card-body">
+                                            <p class="card-title text-primary">{{second_asin[0][1]}}</p>
+                                            <a class="btn btn-outline-primary" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">Shop Now</a>
+                                    </div> 
+                                </div>
+                </div>
+
+                <div class="col-md-4">
+                                <div class="card border-light mb-3" style="max-width: 18rem;height: 450px; width: 400px;">
+                                    <p class="card-header "><strong>Third Option</strong></p>
+                                    <img class="card-img-top" src="{{third_asin[0][2]}}"  style="height: 250px; width: 270px;">
+                                    
+                                    <div class="card-body">
+                                            <p class="card-title text-primary">{{third_asin[0][1]}}</p>
+                                            <a class="btn btn-outline-primary" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">Shop Now</a>
+                                    </div> 
+                                </div>
+                </div>
+                    
+            </div>
+      </div> 
+       
+ 
+</body>
+</html>
+  

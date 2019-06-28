@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+<style>
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 15px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
+}
+</style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+          <div class="collapse navbar-collapse" id="navbarColor01">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.whowhatwear.com/" target="_blank">whats making news</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">go shopping</a>
+                </li>
+              
+              </ul>
+              
+            </div>
+    </nav>
+        
+      
+
+
+    <div class ="row">    
+          {% for a in asins %}
+                <form method="POST" action="./getRecommendations" style="display: inline">
+                      <div class="column">
+                              <div class="card mb-3" style="width: 20rem;">
+                                  <p class="card-header text-primary"><strong>{{a[0][1]}}</strong></p>
+                                  <img src="{{a[0][2]}}"  style="width:40%">
+                                  <div class="card-body">
+                                        
+                                        <!-- <p class="price">$19.99</p>
+                                        <p>Some text about the jeans..</p> -->                        
+                                        <button id="getReco" name="getReco" class="btn btn-outline-primary" type="submit" value="{{a[0][0]}}">You May Also Like</button>
+                                        
+                                  </div>    
+                              </div>
+                      </div>
+                  </form>  
+          {% endfor %}
+    
+                 
+         
+  </div>
+      
+ 
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Shopping Recommendation App</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/lux/bootstrap.min.css">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+<body>
+
+
+                <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                                <div class="collapse navbar-collapse" id="navbarColor01">
+                                    <ul class="navbar-nav mr-auto">
+                                      <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="https://www.whowhatwear.com/" target="_blank">whats making news</a>
+                                      </li>
+                                      <li class="nav-item">
+                                        <a class="nav-link" href="https://www.amazon.com/amazon-fashion/b/?ie=UTF8&node=7141123011&ref_=topnav_storetab_sl" target="_blank">go shopping</a>
+                                      </li>
+                                    
+                                    </ul>
+                                    
+                                  </div>
+                </nav>
+
+
+        <div class="row">  
+            <div class="col-md-1">
+            </div>  
+            <div class="col-md-3.5">
+                <div class="card mb-3">
+                        <h3 class="card-header">Rating 1 WordCloud</h3>
+                        <img style="height: 350px; width: 370px; display: block;" src="{{url_for('static', filename='wc1.png')}}" alt="Card image">
+                </div>
+            </div>
+            <div class="col-md-3">
+                    <div>
+                    </div>
+            </div>  
+            <div class="col-md-3.5">
+                    <div class="card mb-3">
+                            <h3 class="card-header">Rating 2 WordCloud</h3>
+                            <img style="height: 350px; width: 370px; display: block;" src="{{url_for('static', filename='wc2.png')}}" alt="Card image">
+                    </div>
+            </div> 
+        </div>
+
+
+        <div class="row">  
+                <div class="col-md-4">
+                </div>  
+                <div class="col-md-3.5">
+                    <div class="card mb-3">
+                            <h3 class="card-header">Rating 3 WordCloud</h3>
+                            <img style="height: 350px; width: 370px; display: block;" src="{{url_for('static', filename='wc3.png')}}" alt="Card image">
+                    </div>
+                </div>
+        </div>
+
+        <div class="row">  
+                <div class="col-md-1">
+                </div>  
+                <div class="col-md-3.5">
+                    <div class="card mb-3">
+                            <h3 class="card-header">Rating 4 WordCloud</h3>
+                            <img style="height: 350px; width: 370px; display: block;" src="{{url_for('static', filename='wc4.png')}}" alt="Card image">
+                    </div>
+                </div>
+                <div class="col-md-3">
+                        <div>
+                        </div>
+                </div>  
+                <div class="col-md-3.5">
+                        <div class="card mb-3">
+                                <h3 class="card-header">Rating 5 WordCloud</h3>
+                                <img style="height: 350px; width: 370px; display: block;" src="{{url_for('static', filename='wc5.png')}}" alt="Card image">
+                        </div>
+                </div> 
+            </div>
+              
+
+
+
+</body>
+</html>
